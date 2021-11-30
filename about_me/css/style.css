@@ -1,0 +1,623 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header, section {
+    min-height: 100vh;
+    position: relative;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+/* Desktop Menü*/
+
+.nav-container {
+    background-color:  rgb(3, 43, 0);
+    width: 100vw;
+    height: 4vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+#jump li {
+    display: inline-block;
+}
+
+.menuicon {
+    width: auto;
+    height: 70%;
+    margin-left: 2%;
+    float: left;
+    
+}
+
+.menuicon a img{
+    width: auto;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.direct {
+    display: none;
+}
+
+#jump {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    float: right;
+    padding-right: 2vw;
+}
+
+#jump li a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 30px;
+    font-family: 'Cinzel', serif,'Extra-bold 800';
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.test:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(223, 223, 223);
+    transition: width .3s;
+}
+
+.test:hover:after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Desktop Menü*/
+
+.mockup {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+   
+    margin-top: 5rem;
+    
+}
+.titel {
+   margin-top: 2rem;
+   margin-right: auto;
+   margin-left: auto;
+   width: 80%;
+   height: 2rem;
+ 
+   font-family: 'Cinzel', serif;
+   font-size: 2rem;
+   text-align: center;
+}
+
+.klappentext {
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+   
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.xname {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 5rem;
+
+
+    font-family: 'Cinzel', serif;
+   font-size: 2rem;
+   text-align: center;
+}
+.xtext {
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+   
+    margin-top: 1rem;
+    text-align: justify;
+ }
+.xbild {
+   margin-top: 2rem;
+   margin-right: auto;
+   margin-left: auto;
+   width: 60%;
+   height: auto;
+    
+}
+
+.deko {
+   width: 40%;
+   height: auto;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.inner {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#verlinkung {
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    margin-bottom: 1rem;
+    
+}
+
+.social {
+    width: 50%;
+    height: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    
+}
+
+.formales {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.formales a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+footer {
+    position: relative;
+    height: 15vh;
+    width: 100%;
+}
+
+/* Letzte Seite */
+
+
+
+@media screen and (max-width:767px) and (min-width:423px) {
+
+    .grid {
+        margin-bottom: 3rem;
+    }
+    .scroll.runter.unten.ende {
+    bottom: -3.5rem;
+    }
+}
+
+@media screen and (max-width:423px) {
+
+    .grid {
+        margin-bottom: 3rem;
+    }
+    .scroll.runter.unten.ende {
+    bottom: -3rem;
+    }
+
+    #verlinkung {
+        margin-top: 3rem;
+    }
+}
+
+
+/* Navigation */
+@media screen and (max-width:767px) {
+
+
+.menuicon {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#jump {
+    text-align: left;
+    list-style: none;
+    position: unset;
+    float: unset;
+    padding-left: 3rem;
+}
+
+#jump li {
+    display: unset;
+}
+
+#jump li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+}
+
+.direct {
+    display: unset;
+    text-align: left;
+    list-style: none;
+    padding-left: 3rem;
+}
+
+.direct li {
+    padding: 0;
+}
+
+.direct li a {
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    color: rgb(157, 157, 157);
+    display: block;
+    padding: 0.3rem 7rem;
+    font-size: 1rem;
+}
+
+
+.nav-container.is-active {
+    height: 70vh;
+    
+}
+
+
+.nav-container {
+    position: unset; 
+    height: 0vh;
+    overflow: hidden;
+    background-color:  rgb(3, 43, 0);
+    transition: all 1s;
+}
+
+}
+/* Navigation */
+
+
+/* Hamburger Icon*/
+
+.hamburger {
+    position: absolute;
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin-top: 2%;
+    margin-left: 2%;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #ffffff; }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #bababa;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+
+
+      /*
+   * Spring
+   */
+.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear; }
+    .hamburger--spring .hamburger-inner::before {
+      top: 10px;
+      transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--spring .hamburger-inner::after {
+      top: 20px;
+      transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--spring.is-active .hamburger-inner {
+    transition-delay: 0.22s;
+    background-color: transparent !important; }
+    .hamburger--spring.is-active .hamburger-inner::before {
+      top: 0;
+      transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 10px, 0) rotate(45deg); }
+    .hamburger--spring.is-active .hamburger-inner::after {
+      top: 0;
+      transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 10px, 0) rotate(-45deg); }
+
+
+
+
+
+/* Impressum/Datenschutz */
+
+.imp_logo {
+    width: 10vh;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.imp_text {
+    text-align: left;
+    color:  rgb(184, 184, 184);
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+.dat_text {
+    text-align: justify;
+    color: rgb(184, 184, 184);
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+.dat_text h1, .imp_text h1 {
+    color: white;
+}
+
+#close {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-cancel {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Impressum/Datenschutz */
+
+
+
+/* responsives Design */
+
+@media screen and (min-width: 768px) {
+
+    button.hamburger{ display: none; }
+
+    .nav-container {
+        min-height: 4rem;
+    }
+
+
+    
+
+
+
+    .inner {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imp_logo {
+        display: none;
+    }
+
+    .imp_text {
+        margin-top: 15%;
+    }
+
+    .dat_text {
+        margin-top: 15%;
+    }
+    
+    #verlinkung {
+        width: 15%;
+        min-width: 10rem;
+        height: 1rem;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .formales {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 0rem;
+    }
+
+    .formales a{
+        font-size: 1rem;
+        padding-bottom: 4%;
+    }
+
+    .imp_text {
+        font-size: 1rem;
+    }
+
+    .dat_text {
+        font-size: 1rem;
+    }
+    .mockup {
+        float: left;
+        width: 60%;
+        height: auto;
+       
+        margin-top: 5rem;
+        
+   }
+   .titel {
+       margin-top: 5rem;
+       margin-right: 7%;
+       float: right;
+       width: 30%;
+       height: 5rem;
+     
+       font-family: 'Cinzel', serif;
+       font-size: 3rem;
+       text-align: center;
+   }
+    .klappentext {
+        font-size: 1.2rem;
+        float: right;
+        margin-right: 3%;
+        height: auto;
+        width: 37%;
+       
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+   .alles {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        width: 95%;
+        height: 50rem;
+     
+        
+        
+        
+    }
+
+    .xlinks{
+        margin-top: 10rem;
+        margin-left: 5%;
+        float: left;
+        height: auto;
+        width: 30%;
+    }
+    .xname {
+        width: 100%;
+        float: left;
+        height: 5rem;
+  
+        font-family: 'Cinzel', serif;
+       font-size: 3rem;
+       text-align: center;
+    }
+     .xtext {
+         font-size: 1.2rem;
+         float: left;
+         height: auto;
+         width: 100%;
+         
+         margin-top: 5rem;
+         text-align: justify;
+     }
+     .xbild {
+        float: right;
+        width: 30%;
+        height: 30rem;
+  
+        margin-top: 6rem;
+        margin-right: 15%;
+        
+   }
+
+   .deko {
+       width: 10%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+   }
+    
+
+   .social {
+    width: 20%;
+    height: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1300px) {
+    .text {
+        font-size: 90%;
+        float: left;
+        margin-left: 2%;
+        height: auto;
+        width: 30%;
+        background-color: #00E0FB;
+    }
+   .logo {
+        float: left;
+        width: 30%;
+        height: auto;
+   }
+}
